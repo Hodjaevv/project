@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./css.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>exam</title>
   </head>
   <body>
@@ -29,22 +31,34 @@
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container search_container">
         <form id="form" class="form">
           <input
             class="form__input"
             type="search"
             name="search"
             id="form__input"
-            placeholder="Search Country"
+            placeholder="Search for Countries by name"
             aria-label="search"
             autocomplete="off"
           />
           <div class="border"></div>
         </form>
+        <select id="select">
+          <option value="">All</option>
+          <option value="">Asia</option>
+          <option value="">Africa</option>
+          <option value="">Europa</option>
+          <option value=""></option>
+        </select>
       </div>
       <div class="container">
         <ul id="list"></ul>
+        <div class="box">
+          <a href="#"
+            ><span class="material-symbols-outlined"> expand_less </span></a
+          >
+        </div>
       </div>
     </main>
     <script src="./script.js"></script>
